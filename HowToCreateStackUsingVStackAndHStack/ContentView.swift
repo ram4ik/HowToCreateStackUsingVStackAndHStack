@@ -18,9 +18,13 @@ struct ContentView: View {
             }
             Divider()
             HStack(spacing: 50) {
+                Spacer()
                 Text("SwiftUI")
                     .padding(.bottom, 100)
+                Divider()
+                Spacer()
                 Text("rocks")
+                Spacer()
             }
             Divider()
         }.padding()
