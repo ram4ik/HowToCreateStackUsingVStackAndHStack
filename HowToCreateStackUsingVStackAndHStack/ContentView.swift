@@ -27,6 +27,14 @@ struct ContentView: View {
                 Spacer()
             }
             Divider()
+            
+            ZStack(alignment: .leading) {
+                Image("example-image")
+                Text("Fun with Swift")
+                    .font(.largeTitle)
+                    .background(Color.black)
+                    .foregroundColor(.white)
+            }
         }.padding()
     }
 }
