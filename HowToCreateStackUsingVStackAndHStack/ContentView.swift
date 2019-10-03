@@ -29,7 +29,13 @@ struct ContentView: View {
             Divider()
             
             ZStack(alignment: .leading) {
-                Image("example-image")
+                Group {
+                    if Bool.random() {
+                        Image("example-image")
+                    } else {
+                        Text("Better luck next time")
+                    }
+                }
                 Text("Fun with Swift")
                     .font(.largeTitle)
                     .background(Color.black)
