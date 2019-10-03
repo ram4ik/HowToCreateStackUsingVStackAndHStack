@@ -35,6 +35,17 @@ struct ContentView: View {
                     .background(Color.black)
                     .foregroundColor(.white)
             }
+            
+            ZStack {
+                Rectangle()
+                    .fill(Color.green)
+                    .frame(width: 50, height: 50)
+                    .zIndex(1)
+
+                Rectangle()
+                    .fill(Color.red)
+                    .frame(width: 100, height: 100)
+            }
         }.padding()
     }
 }
